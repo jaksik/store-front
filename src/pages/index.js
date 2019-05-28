@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import Skus from "../components/Products/Skus"
 import SEO from "../components/seo"
 // Welcome to Storefont
 // This is going to be a dynamic e-commerce store template
@@ -21,13 +22,11 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Welcome To Best Pens</h1>
+    <h2>The place to buy the best pens</h2>
+    <p>Check out our collection of awesome pens</p>
+    
+    <Skus /> 
   </Layout>
 )
 

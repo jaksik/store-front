@@ -1,11 +1,24 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Storefront`,
+    title: `Best Pens`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-stripe',
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Sku'],
+        secretKey: process.env.STRIPE_SECRET_KEY,
+        downloadFiles: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
