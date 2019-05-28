@@ -4,6 +4,19 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+// Welcome to Storefont
+// This is going to be a dynamic e-commerce store template
+// A few features include...
+// Stripe Checkout
+// Stripe Rendered Products
+// Blog and CMS
+// Google Analytics
+// Mailchimp Newsletter Sevice
+
+// The over-all idea is for this to be my original e-commerce store template
+// This is my quickest path to setting up an e-commerce store for clients
+// Everything must be dynamicaly imported and rendered
+// Make it to emulate JSP Glassworks
 
 const IndexPage = () => (
   <Layout>
